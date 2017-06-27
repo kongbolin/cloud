@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/updateaddress_address"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:background="#fff000"
+        android:gravity="center"
+        android:hint="@string/selectaddress"
+        android:textColor="#030303"
+        android:textSize="8pt" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_updateaddress_cancle"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:background="#698B22"
+            android:text="@string/cancel"
+            android:textColor="#5CACEE" />
+
+        <Button
+            android:id="@+id/btn_updateaddress_confirm"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:background="#698B22"
+            android:text="@string/affirm"
+            android:textColor="#5CACEE" />
+    </LinearLayout>
+
+</LinearLayout>

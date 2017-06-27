@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eaeaea"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/btn_baomu_back"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="@string/back"
+                android:textColor="#030303"
+                android:textSize="16pt" />
+
+            <TextView
+                android:id="@+id/text_baomu_top"
+                android:layout_width="240dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.74"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="@string/zhujiabaomu"
+                android:textColor="#030303"
+                android:textSize="16pt" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/text_baomu_serverscon"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="服务内容"
+                android:textColor="#00ff00"
+                android:textSize="8pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_baojie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/text_baomu_no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/mianji"
+                    android:textColor="#030303"
+                    android:textSize="8pt" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/text_baomu_mianjidaxiao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/mianjidaxiao"
+                    android:textColor="#030303"
+                    android:textSize="8pt" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bacseekwu"
+                android:orientation="vertical" >
+
+                <SeekBar
+                    android:id="@+id/seekbar_baomu_fangwumianji"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp"
+                    android:max="100"
+                    android:progress="20"
+                    android:progressDrawable="@drawable/bg_bar"
+                    android:thumb="@drawable/thumb_bar" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_baomu_zuofan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text_baomu_kouwei"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:text="@string/kouwei"
+                    android:textColor="#030303"
+                    android:textSize="8pt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_baomu_xian"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:text="@string/xian" />
+
+                <Button
+                    android:id="@+id/btn_baomu_dan"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:text="@string/dan" />
+
+                <Button
+                    android:id="@+id/btn_baomu_la"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:text="@string/la" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_baomu_qingdan"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:text="@string/qingdan" />
+
+                <Button
+                    android:id="@+id/btn_baomu_mianshi"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:text="@string/mianshi" />
+
+                <Button
+                    android:id="@+id/btn_baomu_empty1"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="#eaeaea" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text_baomu_jiawei"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="@string/jiawei"
+                android:textColor="#030303"
+                android:textSize="8pt" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/text_baomu_jiaweijiage"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="@string/jiaweijiage"
+                android:textColor="#030303"
+                android:textSize="8pt" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bacseekk"
+            android:orientation="vertical" >
+
+            <SeekBar
+                android:id="@+id/seekbar_baomu_xinlijiawei"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:max="100"
+                android:progress="20"
+                android:progressDrawable="@drawable/bg_bar"
+                android:thumb="@drawable/thumb_bar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/text_baomu_petis"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="@string/petis"
+                android:textColor="#030303"
+                android:textSize="8pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_baomu_bigdog"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:text="@string/bigdog" />
+
+                <Button
+                    android:id="@+id/btn_baomu_smalldog"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:text="@string/smalldog" />
+
+                <Button
+                    android:id="@+id/btn_baomu_cat"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:text="@string/cat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/baomu_other"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/other"
+                    android:textColor="#030303"
+                    android:textSize="8pt" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/baomu_otherdetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:hint="@string/otherdetail"
+                    android:singleLine="true"
+                    android:textColor="#030303"
+                    android:textSize="8pt" >
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text_baomu_address"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:hint="@string/address"
+                android:textColor="#030303"
+                android:textSize="8pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/text_baomu_contact"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:hint="@string/lianxiren"
+                android:textColor="#030303"
+                android:textSize="8pt" />
+
+            <EditText
+                android:id="@+id/text_baomu_phone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:hint="@string/phonenumber"
+                android:phoneNumber="true"
+                android:textColor="#030303"
+                android:textSize="8pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/text_baomu_tishi"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="#eaeaea"
+                android:text="@string/wenxintishi"
+                android:textColor="#030303"
+                android:textSize="8pt" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_baomu_ok"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:text="@string/ok"
+            android:textColor="#00ff00"
+            android:textSize="18pt" />
+    </LinearLayout>
+
+</ScrollView>

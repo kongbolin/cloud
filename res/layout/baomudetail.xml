@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/btn_baomu_serverscon"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="80dp"
+            android:background="#B3EE3A"
+            android:gravity="center"
+            android:text="@string/orderdetail"
+            android:textColor="#030303"
+            android:textSize="16pt" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text_baomu_order_typename"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_weight="3"
+                android:background="#B3EE3A"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="类型"
+                android:textColor="#030303"
+                android:textSize="7pt" />
+
+            <TextView
+                android:id="@+id/text_baomu_order_typenamescreen"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="#B3EE3A"
+                android:gravity="center"
+                android:hint="类型"
+                android:singleLine="true"
+                android:textColor="#030303"
+                android:textSize="7pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text_baomu_order_otherneed"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_weight="3"
+                android:background="#B3EE3A"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="需求"
+                android:textColor="#030303"
+                android:textSize="7pt" />
+
+            <TextView
+                android:id="@+id/text_baomu_order_otherneedscreen"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="#B3EE3A"
+                android:gravity="center"
+                android:hint="需求"
+                android:singleLine="true"
+                android:textColor="#030303"
+                android:textSize="7pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text_baomu_order_address"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_weight="3"
+                android:background="#B3EE3A"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="地址"
+                android:textColor="#030303"
+                android:textSize="7pt" />
+
+            <TextView
+                android:id="@+id/text_baomu_order_addressscreen"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="#B3EE3A"
+                android:gravity="center"
+                android:hint="地址"
+                android:singleLine="true"
+                android:textColor="#030303"
+                android:textSize="7pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text_baomu_order_contact"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_weight="3"
+                android:background="#B3EE3A"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="姓名"
+                android:textColor="#030303"
+                android:textSize="7pt" />
+
+            <TextView
+                android:id="@+id/text_baomu_order_contactscreen"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="#B3EE3A"
+                android:gravity="center"
+                android:hint="姓名"
+                android:singleLine="true"
+                android:textColor="#030303"
+                android:textSize="7pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text_baomu_order_phonenumber"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_weight="3"
+                android:background="#B3EE3A"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="电话"
+                android:textColor="#030303"
+                android:textSize="7pt" />
+
+            <TextView
+                android:id="@+id/text_baomu_order_phonenumberscreen"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="#B3EE3A"
+                android:gravity="center"
+                android:hint="电话"
+                android:singleLine="true"
+                android:textColor="#030303"
+                android:textSize="7pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text_baomu_order_square"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_weight="3"
+                android:background="#B3EE3A"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="面积"
+                android:textColor="#030303"
+                android:textSize="7pt" />
+
+            <TextView
+                android:id="@+id/text_baomu_order_squarescreen"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="#B3EE3A"
+                android:gravity="center"
+                android:hint="面积"
+                android:singleLine="true"
+                android:textColor="#030303"
+                android:textSize="7pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text_baomu_order_taste"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_weight="3"
+                android:background="#B3EE3A"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="口味"
+                android:textColor="#030303"
+                android:textSize="7pt" />
+
+            <TextView
+                android:id="@+id/text_baomu_order_tastescreen"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="#B3EE3A"
+                android:gravity="center"
+                android:hint="口味"
+                android:singleLine="true"
+                android:textColor="#030303"
+                android:textSize="7pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text_baomu_order_pet"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_weight="3"
+                android:background="#B3EE3A"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="宠物"
+                android:textColor="#030303"
+                android:textSize="7pt" />
+
+            <TextView
+                android:id="@+id/text_baomu_order_petscreen"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="#B3EE3A"
+                android:gravity="center"
+                android:hint="宠物"
+                android:singleLine="true"
+                android:textColor="#030303"
+                android:textSize="7pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text_baomu_order_price"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_weight="3"
+                android:background="#B3EE3A"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="心理价位"
+                android:textColor="#030303"
+                android:textSize="7pt" />
+
+            <TextView
+                android:id="@+id/text_baomu_order_pricescreen"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="#B3EE3A"
+                android:gravity="center"
+                android:hint="心理价位"
+                android:singleLine="true"
+                android:textColor="#030303"
+                android:textSize="7pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_baomu_order_cancle"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:background="#B3EE3A"
+                android:text="@string/delete"
+                android:textColor="#030303"
+                android:textSize="12pt" />
+
+            <Button
+                android:id="@+id/btn_baomu_order_confirm"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:background="#B3EE3A"
+                android:text="@string/backto"
+                android:textColor="#030303"
+                android:textSize="12pt" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

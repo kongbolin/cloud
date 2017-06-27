@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#698B22"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_address_new"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#698B22"
+            android:focusable="false"
+            android:text="@string/new111"
+            android:textColor="#FFffff" />
+
+        <Button
+            android:id="@+id/btn_address_cancle"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#698B22"
+            android:focusable="false"
+            android:text="@string/cancel"
+            android:textColor="#FFffff" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/addadaptertext_address"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:background="#76EEC6"
+        android:gravity="center"
+        android:text="@string/addnewaddress"
+        android:textColor="#7A378B"
+        android:textSize="8pt" />
+
+    <TextView
+        android:id="@+id/adaptertext_address"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="80dp"
+        android:background="#fff000"
+        android:gravity="center"
+        android:hint="@string/selectaddress"
+        android:textColor="#030303"
+        android:textSize="8pt" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="120dp"
+        android:background="#698B22"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_address_confirm"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#698B22"
+            android:focusable="false"
+            android:text="@string/affirm"
+            android:textColor="#5CACEE" />
+
+        <Button
+            android:id="@+id/btn_address_delete"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#698B22"
+            android:focusable="false"
+            android:text="@string/delete"
+            android:textColor="#FF0000" />
+
+        <Button
+            android:id="@+id/btn_address_update"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#698B22"
+            android:focusable="false"
+            android:text="@string/xiugai"
+            android:textColor="#FF0000" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="160dp"
+        android:background="#ffffff" />
+
+</RelativeLayout>

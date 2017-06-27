@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffe0"
+    android:orientation="vertical"
+    tools:context="viewpaper" >
+
+    <TextView
+        android:id="@+id/top1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00FA9A"
+        android:gravity="center"
+        android:text="@string/topword1"
+        android:textColor="#030303"
+        android:textSize="16pt" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/olderbaojie"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00FFFF"
+            android:text="保洁" />
+
+        <Button
+            android:id="@+id/olderzhongdiangong"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00FFFF"
+            android:text="钟点" />
+
+        <Button
+            android:id="@+id/olderbaomu"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00FFFF"
+            android:text="保姆" />
+
+        <Button
+            android:id="@+id/olderyuer"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00FFFF"
+            android:text="育儿" />
+
+        <Button
+            android:id="@+id/olderoldman"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00FFFF"
+            android:text="老人" />
+
+        <Button
+            android:id="@+id/olderyuesao"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00FFFF"
+            android:text="月嫂" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/older_labellist"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal" >
+
+        <ListView
+            android:id="@+id/order_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/older_label"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom ="true"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/firstpage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:drawableTop="@drawable/picturehomeno"
+            android:text="@string/firstpage" />
+
+        <Button
+            android:id="@+id/older"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:drawableTop="@drawable/pictureorderyes"
+            android:text="@string/order" />
+
+        <Button
+            android:id="@+id/me"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:drawableTop="@drawable/picturemeno"
+            android:text="@string/me" />
+
+        <Button
+            android:id="@+id/servers"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:drawableTop="@drawable/servers"
+            android:text="@string/servers" />
+
+        <Button
+            android:id="@+id/finish"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:drawableTop="@drawable/pictureexit"
+            android:text="@string/exist" 
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</RelativeLayout>

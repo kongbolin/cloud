@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eaeaea"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/btn_baojie_back"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="@string/back"
+                android:textColor="#030303"
+                android:textSize="16pt" />
+
+            <TextView
+                android:id="@+id/text_baojie_top"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="@string/baojie"
+                android:textColor="#030303"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/text_baojie_serverscon"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="服务内容"
+                android:textColor="#00ff00"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text_singleprice"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="@string/singleprice"
+                android:textColor="#030303"
+                android:textSize="8pt" />
+
+            <TextView
+                android:id="@+id/text_singlepricenumber"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:hint="@string/pricenumbei"
+                android:textColor="#030303"
+                android:textSize="8pt" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/text_choicetime"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="@string/choicetime"
+                android:textColor="#030303"
+                android:textSize="8pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_two"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bacno"
+                    android:text="@string/twohour" />
+
+                <Button
+                    android:id="@+id/btn_three"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:text="@string/threehour" />
+
+                <Button
+                    android:id="@+id/btn_four"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:text="@string/fourhour" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/text_zojia"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/zojia"
+                    android:textColor="#030303"
+                    android:textSize="8pt" />
+
+                <TextView
+                    android:id="@+id/text_totalprice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/price"
+                    android:textColor="#030303"
+                    android:textSize="8pt" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/text_gotime"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/gotime"
+                    android:textColor="#030303"
+                    android:textSize="8pt" />
+
+                <TextView
+                    android:id="@+id/text_dotimenumber"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:hint="@string/gotimechioce"
+                    android:textColor="#030303"
+                    android:textSize="8pt" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <DatePicker
+                    android:id="@+id/dp_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TimePicker
+                    android:id="@+id/tp_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btn_dateok"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#ffffff"
+                    android:text="@string/queding"
+                    android:textSize="11pt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/baojie_other"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/other"
+                    android:textColor="#030303"
+                    android:textSize="8pt" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/baojie_otherdetail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:hint="@string/otherdetail"
+                    android:singleLine="true"
+                    android:textColor="#030303"
+                    android:textSize="8pt" >
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text_baojie_address"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:hint="@string/address"
+                android:textColor="#030303"
+                android:textSize="8pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/text_baojie_contact"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:hint="@string/lianxiren"
+                android:textColor="#030303"
+                android:textSize="8pt" />
+
+            <EditText
+                android:id="@+id/text_baojie_phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:hint="@string/phonenumber"
+                android:phoneNumber="true"
+                android:textColor="#030303"
+                android:textSize="8pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/text_baojie_tishi"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="#eaeaea"
+                android:text="@string/wenxintishi"
+                android:textColor="#030303"
+                android:textSize="8pt" />
+
+            <Button
+                android:id="@+id/btn_baojie_ok"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:text="@string/ok"
+                android:textColor="#00ff00"
+                android:textSize="18pt"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

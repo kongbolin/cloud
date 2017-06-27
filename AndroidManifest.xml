@@ -1,0 +1,248 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cloud"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:name="baidumapsdk.demo.DemoApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="u8gSNqx3hxDiomoqYR8skDk3" />
+
+        <activity
+            android:name="baidumapsdk.demo.BMapApiDemoMain"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+
+            <!--
+            	Adapter表示一个继承自cn.sharesdk.framework.authorize.AuthorizeAdapter的类，
+            	这个类可以监听到页面的生命周期，也可以获取授权页面的各种UI控件。 
+            	开发者可以通过继承AuthorizeAdapter，重写其方法，并获取各种UI来自定义这个页面的行为。
+            	
+            	If you want to change the page's title of auth, you should extends the AuthorizeAdapter 
+            	and set the below android:value  
+            -->
+            <meta-data
+                android:name="Adapter"
+                android:value="cn.sharesdk.demo.MyAdapter" />
+
+            <!--
+            	Dropbox的SSO功能需要在此处添加一个对ACTION_VIEW事件的过滤器，其中的scheme是
+            	“db-”前缀再开发者应用的加上appKey。如果此过滤器不设置，则不能完成SSO功能授权
+            	
+            	The platform of Dropbox uses SSO that must set the below inter-filter
+            -->
+            <intent-filter>
+                <data android:scheme="db-7janx53ilz11gbs" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.cloud.baojie" >
+        </activity>
+        <activity android:name="com.example.cloud.address" >
+        </activity>
+        <activity
+            android:name="com.example.cloud.serverscon"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity android:name="com.example.cloud.edit" >
+        </activity>
+        <activity
+            android:name="com.example.cloud.baojieserverscon"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity android:name="com.example.cloud.baojieedit" >
+        </activity>
+        <activity
+            android:name="com.example.cloud.yuesaoserverscon"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity android:name="com.example.cloud.yuesaoedit" >
+        </activity>
+        <activity
+            android:name="com.example.cloud.oldmanserverscon"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity android:name="com.example.cloud.oldmanedit" >
+        </activity>
+        <activity
+            android:name="com.example.cloud.yuerserverscon"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity android:name="com.example.cloud.yueredit" >
+        </activity>
+        <activity
+            android:name="com.example.cloud.baomuserverscon"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity android:name="com.example.cloud.baomuedit" >
+        </activity>
+        <activity android:name="com.example.cloud.addaddress" >
+        </activity>
+        <activity android:name="com.example.cloud.zhongdiangong" >
+        </activity>
+        <activity android:name="com.example.cloud.baomu" >
+        </activity>
+        <activity android:name="com.example.cloud.yuer" >
+        </activity>
+        <activity android:name="com.example.cloud.oldman" >
+        </activity>
+        <activity android:name="com.example.cloud.yuesao" >
+        </activity>
+        <activity android:name="com.example.cloud.me" >
+        </activity>
+        <activity android:name="com.example.cloud.order" >
+        </activity>
+        <activity android:name="com.example.cloud.servers" >
+        </activity>
+        <activity android:name="com.example.cloud.updateaddress" >
+        </activity>
+        <activity android:name="com.example.cloud.viewpaper" >
+        </activity>
+        <activity android:name="com.example.cloud.navigationone" >
+        </activity>
+        <activity android:name="com.example.cloud.navigationtwo" >
+        </activity>
+        <activity android:name="com.example.cloud.navigationthree" >
+        </activity>
+        <activity android:name="com.example.cloud.navigationfour" >
+        </activity>
+        <activity
+            android:name="com.example.cloud.baojieorder"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.cloud.zhongdiangongorder"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.cloud.baomuorder"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.cloud.oldmanorder"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.cloud.yuerorder"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.cloud.yuesaoorder"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.cloud.baojiedetail"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.cloud.zhongdiangongdetail"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.cloud.baomudetai"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.cloud.oldmandetail"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.cloud.yuerdeta"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.cloud.yuesaodetail"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity android:name="com.example.cloud.getusername" >
+        </activity>
+        <activity android:name="com.example.cloud.login" >
+        </activity>
+        <activity android:name="com.example.cloud.our" >
+        </activity>
+        <activity android:name="server.myorder" >
+        </activity>
+        <activity android:name="server.myinfo" >
+        </activity>
+        <activity android:name="server.serverset" >
+        </activity>
+        <activity android:name="server.mybaojiedetail" >
+        </activity>
+        <activity android:name="server.mybaomudetail" >
+        </activity>
+        <activity android:name="server.myoldmandetail" >
+        </activity>
+        <activity android:name="server.myyuerdetail" >
+        </activity>
+        <activity android:name="server.myyuesaodetail" >
+        </activity>
+        <activity android:name="server.myzhongdiangongdetail" >
+        </activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

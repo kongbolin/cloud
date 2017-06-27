@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffe0"
+    android:orientation="vertical"
+    tools:context="viewpaper" >
+
+    <TextView
+        android:id="@+id/top1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:text="@string/topwordme"
+        android:textColor="#030303"
+        android:textSize="16pt" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/top1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="账号"
+            android:textColor="#030303"
+            android:textSize="7pt" />
+
+        <TextView
+            android:id="@+id/text_username"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:hint="账号"
+            android:textColor="#030303"
+            android:textSize="7pt" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="120dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/system_me"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="关于我们" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="180dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/system_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:text="切换账号" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/me_label"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="end"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/firstpage"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:drawableTop="@drawable/picturehomeno"
+            android:text="@string/firstpage" />
+
+        <Button
+            android:id="@+id/older"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:drawableTop="@drawable/pictureorderno"
+            android:text="@string/order" />
+
+        <Button
+            android:id="@+id/me"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:drawableTop="@drawable/picturemeyes"
+            android:text="@string/me" />
+
+        <Button
+            android:id="@+id/servers"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:drawableTop="@drawable/servers"
+            android:text="@string/servers" />
+
+        <Button
+            android:id="@+id/finish"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:drawableTop="@drawable/pictureexit"
+            android:text="@string/exist"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

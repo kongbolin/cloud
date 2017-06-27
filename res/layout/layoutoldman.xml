@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eaeaea"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/btn_oldman_back"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="@string/back"
+                android:textColor="#030303"
+                android:textSize="16pt" />
+
+            <TextView
+                android:id="@+id/text_oldman_top"
+                android:layout_width="240dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.74"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="@string/oldman"
+                android:textColor="#030303"
+                android:textSize="16pt" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/text_oldman_serverscon"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="服务内容"
+                android:textColor="#00ff00"
+                android:textSize="8pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_baojie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_oldman_boy"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:text="@string/man" />
+
+                <Button
+                    android:id="@+id/btn_oldman_girl"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:text="@string/woman" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+                 <Button
+                    android:id="@+id/btn_oldman_self"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:text="@string/self" />
+
+                <Button
+                    android:id="@+id/btn_oldman_halfself"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:text="@string/halfself" />
+                 <Button
+                    android:id="@+id/btn_oldman_no"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:text="@string/selfno" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text_oldman_jiawei"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="@string/jiawei"
+                android:textColor="#030303"
+                android:textSize="8pt" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/text_oldman_jiaweijiage"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="@string/jiaweijiage"
+                android:textColor="#030303"
+                android:textSize="8pt" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bacseekk"
+            android:orientation="vertical" >
+
+            <SeekBar
+                android:id="@+id/seekbar_oldman_xinlijiawei"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:max="100"
+                android:progress="20"
+                android:progressDrawable="@drawable/bg_bar"
+                android:thumb="@drawable/thumb_bar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_oldman_zhujia"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:text="@string/zhujia" />
+
+            <Button
+                android:id="@+id/btn_oldman_buzhujia"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:text="@string/buzhujia" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/text_oldman_petis"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="@string/petis"
+                android:textColor="#030303"
+                android:textSize="8pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_oldman_bigdog"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:text="@string/bigdog" />
+
+                <Button
+                    android:id="@+id/btn_oldman_smalldog"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:text="@string/smalldog" />
+
+                <Button
+                    android:id="@+id/btn_oldman_cat"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:text="@string/cat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/oldman_other"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/other"
+                    android:textColor="#030303"
+                    android:textSize="8pt" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/oldman_otherdetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:hint="@string/otherdetail"
+                    android:singleLine="true"
+                    android:textColor="#030303"
+                    android:textSize="8pt" >
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text_oldman_address"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:hint="@string/address"
+                android:textColor="#030303"
+                android:textSize="8pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/text_oldman_order_contactoldman"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:hint="@string/lianxiren"
+                android:textColor="#030303"
+                android:textSize="8pt" />
+
+            <EditText
+                android:id="@+id/text_oldman_order_phoneoldman"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:hint="@string/phonenumber"
+                android:phoneNumber="true"
+                android:textColor="#030303"
+                android:textSize="8pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/text_oldman_tishi"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="#eaeaea"
+                android:text="@string/wenxintishi"
+                android:textColor="#030303"
+                android:textSize="8pt" />
+
+            <Button
+                android:id="@+id/btn_oldman_ok"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:text="@string/ok"
+                android:textColor="#00ff00"
+                android:textSize="18pt" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

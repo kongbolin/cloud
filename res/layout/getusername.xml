@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/btn_baomu_serverscon"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#00FA9A"
+        android:gravity="center"
+        android:text="注册界面（简化版）"
+        android:textColor="#030303"
+        android:textSize="8pt" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/btn_baomu_serverscon"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#00ffff"
+            android:gravity="center"
+            android:text="账号"
+            android:textColor="#030303"
+            android:textSize="8pt" />
+
+        <EditText
+            android:id="@+id/edit_newusername"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:hint="请输入账号"
+            android:textColor="#030303"
+            android:textSize="8pt" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/btn_baomu_serverscon"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#00ffff"
+            android:gravity="center"
+            android:text="密码"
+            android:textColor="#030303"
+            android:textSize="8pt" />
+
+        <EditText
+            android:id="@+id/edit_newpassword"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:hint="请输入密码"
+            android:textColor="#030303"
+            android:textSize="8pt" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="#eaeaea"
+        android:orientation="horizontal" >
+ <Button
+            android:id="@+id/btn_new_backerror"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#eaeaea"
+            android:text="注册失败"
+            android:textColor="#030303"
+            android:visibility="gone" />
+        <Button
+            android:id="@+id/btn_new_back"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#eaeaea"
+            android:text="注册成功返回登录"
+            android:textColor="#030303"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_new_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#eaeaea"
+            android:text="@string/cancel"
+            android:textColor="#030303" />
+
+        <Button
+            android:id="@+id/btn_new_affirm"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#eaeaea"
+            android:text="注册"
+            android:textColor="#030303" />
+
+        <Button
+            android:id="@+id/btn__affirmgone"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#eaeaea"
+            android:text="正在注册"
+            android:textColor="#030303"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>
